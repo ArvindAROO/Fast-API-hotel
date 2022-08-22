@@ -1,0 +1,1798 @@
+{
+	"openapi": "3.0.2",
+	"info": {
+		"title": "FastAPI",
+		"version": "0.1.0"
+	},
+	"paths": {
+		"/": {
+			"get": {
+				"summary": "Root",
+				"operationId": "root__get",
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/users/": {
+			"get": {
+				"summary": "Get Users",
+				"operationId": "get_users_users__get",
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				}
+			},
+			"post": {
+				"summary": "Insert Users",
+				"operationId": "insert_users_users__post",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/User"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/staff/": {
+			"get": {
+				"summary": "Get Staff",
+				"operationId": "get_staff_staff__get",
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				}
+			},
+			"post": {
+				"summary": "Insert Staff",
+				"operationId": "insert_staff_staff__post",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Staff"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/admin/": {
+			"get": {
+				"summary": "Get Admin",
+				"operationId": "get_admin_admin__get",
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				}
+			},
+			"post": {
+				"summary": "Insert Admin",
+				"operationId": "insert_admin_admin__post",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Admin"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/customer/": {
+			"get": {
+				"summary": "Get Customer",
+				"operationId": "get_customer_customer__get",
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				}
+			},
+			"post": {
+				"summary": "Insert Customer",
+				"operationId": "insert_customer_customer__post",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Customer"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/hotel/": {
+			"get": {
+				"summary": "Get Hotel",
+				"operationId": "get_hotel_hotel__get",
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				}
+			},
+			"post": {
+				"summary": "Insert Hotel",
+				"operationId": "insert_hotel_hotel__post",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Hotel"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/room/": {
+			"get": {
+				"summary": "Get Room",
+				"operationId": "get_room_room__get",
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				}
+			},
+			"post": {
+				"summary": "Insert Room",
+				"operationId": "insert_room_room__post",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Room"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/booking/": {
+			"get": {
+				"summary": "Get Booking",
+				"operationId": "get_booking_booking__get",
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				}
+			},
+			"post": {
+				"summary": "Insert Booking",
+				"operationId": "insert_booking_booking__post",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Booking"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/review/": {
+			"get": {
+				"summary": "Get Review",
+				"operationId": "get_review_review__get",
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				}
+			},
+			"post": {
+				"summary": "Insert Review",
+				"operationId": "insert_review_review__post",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Review"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/payment/": {
+			"get": {
+				"summary": "Get Payment",
+				"operationId": "get_payment_payment__get",
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				}
+			},
+			"post": {
+				"summary": "Insert Payment",
+				"operationId": "insert_payment_payment__post",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Payment"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/users/{user_id}": {
+			"get": {
+				"summary": "Get User",
+				"operationId": "get_user_users__user_id__get",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "User Id",
+						"type": "string"
+					},
+					"name": "user_id",
+					"in": "path"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			},
+			"put": {
+				"summary": "User Update",
+				"operationId": "user_update_users__user_id__put",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "User Id",
+						"type": "string"
+					},
+					"name": "user_id",
+					"in": "path"
+				}],
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/User"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			},
+			"delete": {
+				"summary": "User Delete",
+				"operationId": "user_delete_users__user_id__delete",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "User Id",
+						"type": "string"
+					},
+					"name": "user_id",
+					"in": "path"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/staff/{staff_id}": {
+			"get": {
+				"summary": "Get Staff",
+				"operationId": "get_staff_staff__staff_id__get",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Staff Id",
+						"type": "string"
+					},
+					"name": "staff_id",
+					"in": "path"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			},
+			"put": {
+				"summary": "Staff Update",
+				"operationId": "staff_update_staff__staff_id__put",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Staff Id",
+						"type": "string"
+					},
+					"name": "staff_id",
+					"in": "path"
+				}],
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Staff"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			},
+			"delete": {
+				"summary": "Staff Delete",
+				"operationId": "staff_delete_staff__staff_id__delete",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Staff Id",
+						"type": "string"
+					},
+					"name": "staff_id",
+					"in": "path"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/admin/{admin_id}": {
+			"get": {
+				"summary": "Get Admin",
+				"operationId": "get_admin_admin__admin_id__get",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Admin Id",
+						"type": "string"
+					},
+					"name": "admin_id",
+					"in": "path"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			},
+			"put": {
+				"summary": "Admin Update",
+				"operationId": "admin_update_admin__admin_id__put",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Admin Id",
+						"type": "string"
+					},
+					"name": "admin_id",
+					"in": "path"
+				}],
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Admin"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			},
+			"delete": {
+				"summary": "Admin Delete",
+				"operationId": "admin_delete_admin__admin_id__delete",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Admin Id",
+						"type": "string"
+					},
+					"name": "admin_id",
+					"in": "path"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/customer/{cust_id}": {
+			"get": {
+				"summary": "Get Customer",
+				"operationId": "get_customer_customer__cust_id__get",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Cust Id",
+						"type": "string"
+					},
+					"name": "cust_id",
+					"in": "path"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			},
+			"put": {
+				"summary": "Customer Update",
+				"operationId": "customer_update_customer__cust_id__put",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Cust Id",
+						"type": "string"
+					},
+					"name": "cust_id",
+					"in": "path"
+				}],
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Customer"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			},
+			"delete": {
+				"summary": "Customer Delete",
+				"operationId": "customer_delete_customer__cust_id__delete",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Cust Id",
+						"type": "string"
+					},
+					"name": "cust_id",
+					"in": "path"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/hotel/{hotel_id}": {
+			"get": {
+				"summary": "Get Hotel",
+				"operationId": "get_hotel_hotel__hotel_id__get",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Hotel Id",
+						"type": "string"
+					},
+					"name": "hotel_id",
+					"in": "path"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			},
+			"put": {
+				"summary": "Hotel Update",
+				"operationId": "hotel_update_hotel__hotel_id__put",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Hotel Id",
+						"type": "string"
+					},
+					"name": "hotel_id",
+					"in": "path"
+				}],
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Hotel"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			},
+			"delete": {
+				"summary": "Hotel Delete",
+				"operationId": "hotel_delete_hotel__hotel_id__delete",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Hotel Id",
+						"type": "string"
+					},
+					"name": "hotel_id",
+					"in": "path"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/room/{room_id}": {
+			"get": {
+				"summary": "Get Room",
+				"operationId": "get_room_room__room_id__get",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Room Id",
+						"type": "string"
+					},
+					"name": "room_id",
+					"in": "path"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			},
+			"put": {
+				"summary": "Room Update",
+				"operationId": "room_update_room__room_id__put",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Room Id",
+						"type": "string"
+					},
+					"name": "room_id",
+					"in": "path"
+				}],
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Room"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			},
+			"delete": {
+				"summary": "Room Delete",
+				"operationId": "room_delete_room__room_id__delete",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Room Id",
+						"type": "string"
+					},
+					"name": "room_id",
+					"in": "path"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/booking/{booking_id}": {
+			"get": {
+				"summary": "Get Booking",
+				"operationId": "get_booking_booking__booking_id__get",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Booking Id",
+						"type": "string"
+					},
+					"name": "booking_id",
+					"in": "path"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			},
+			"put": {
+				"summary": "Booking Update",
+				"operationId": "booking_update_booking__booking_id__put",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Booking Id",
+						"type": "string"
+					},
+					"name": "booking_id",
+					"in": "path"
+				}],
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Booking"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			},
+			"delete": {
+				"summary": "Booking Delete",
+				"operationId": "booking_delete_booking__booking_id__delete",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Booking Id",
+						"type": "string"
+					},
+					"name": "booking_id",
+					"in": "path"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/review/{review_id}": {
+			"get": {
+				"summary": "Get Review",
+				"operationId": "get_review_review__review_id__get",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Review Id",
+						"type": "string"
+					},
+					"name": "review_id",
+					"in": "path"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			},
+			"put": {
+				"summary": "Review Update",
+				"operationId": "review_update_review__review_id__put",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Review Id",
+						"type": "string"
+					},
+					"name": "review_id",
+					"in": "path"
+				}],
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Review"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			},
+			"delete": {
+				"summary": "Review Delete",
+				"operationId": "review_delete_review__review_id__delete",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Review Id",
+						"type": "string"
+					},
+					"name": "review_id",
+					"in": "path"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/payment/{payment_id}": {
+			"get": {
+				"summary": "Get Payment",
+				"operationId": "get_payment_payment__payment_id__get",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Payment Id",
+						"type": "string"
+					},
+					"name": "payment_id",
+					"in": "path"
+				}],
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			},
+			"put": {
+				"summary": "Payment Update",
+				"operationId": "payment_update_payment__payment_id__put",
+				"parameters": [{
+					"required": true,
+					"schema": {
+						"title": "Payment Id",
+						"type": "string"
+					},
+					"name": "payment_id",
+					"in": "path"
+				}],
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Payment"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Successful Response",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					},
+					"422": {
+						"description": "Validation Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HTTPValidationError"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"components": {
+		"schemas": {
+			"Admin": {
+				"title": "Admin",
+				"required": ["id", "name", "mobile", "dob"],
+				"type": "object",
+				"properties": {
+					"id": {
+						"title": "Id",
+						"type": "string"
+					},
+					"name": {
+						"title": "Name",
+						"type": "string"
+					},
+					"mobile": {
+						"title": "Mobile",
+						"type": "string"
+					},
+					"mobile_verified": {
+						"title": "Mobile Verified",
+						"type": "boolean",
+						"default": false
+					},
+					"dob": {
+						"title": "Dob",
+						"type": "string"
+					},
+					"active": {
+						"title": "Active",
+						"type": "boolean",
+						"default": false
+					}
+				}
+			},
+			"Booking": {
+				"title": "Booking",
+				"required": ["id", "room_id", "customer_id", "check_in", "check_out", "booking_status"],
+				"type": "object",
+				"properties": {
+					"id": {
+						"title": "Id",
+						"type": "string"
+					},
+					"room_id": {
+						"title": "Room Id",
+						"type": "string"
+					},
+					"customer_id": {
+						"title": "Customer Id",
+						"type": "string"
+					},
+					"check_in": {
+						"title": "Check In",
+						"type": "string"
+					},
+					"check_out": {
+						"title": "Check Out",
+						"type": "string"
+					},
+					"total_price": {
+						"title": "Total Price",
+						"type": "number",
+						"default": 0.0
+					},
+					"booking_status": {
+						"title": "Booking Status",
+						"type": "string"
+					}
+				}
+			},
+			"Customer": {
+				"title": "Customer",
+				"required": ["id", "name", "mobile", "dob"],
+				"type": "object",
+				"properties": {
+					"id": {
+						"title": "Id",
+						"type": "string"
+					},
+					"name": {
+						"title": "Name",
+						"type": "string"
+					},
+					"mobile": {
+						"title": "Mobile",
+						"type": "string"
+					},
+					"mobile_verified": {
+						"title": "Mobile Verified",
+						"type": "boolean",
+						"default": false
+					},
+					"dob": {
+						"title": "Dob",
+						"type": "string"
+					},
+					"active": {
+						"title": "Active",
+						"type": "boolean",
+						"default": false
+					}
+				}
+			},
+			"HTTPValidationError": {
+				"title": "HTTPValidationError",
+				"type": "object",
+				"properties": {
+					"detail": {
+						"title": "Detail",
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/ValidationError"
+						}
+					}
+				}
+			},
+			"Hotel": {
+				"title": "Hotel",
+				"required": ["id", "name", "location", "state", "image_link"],
+				"type": "object",
+				"properties": {
+					"id": {
+						"title": "Id",
+						"type": "string"
+					},
+					"name": {
+						"title": "Name",
+						"type": "string"
+					},
+					"location": {
+						"title": "Location",
+						"type": "string"
+					},
+					"state": {
+						"title": "State",
+						"type": "string"
+					},
+					"rating": {
+						"title": "Rating",
+						"type": "number",
+						"default": 0.0
+					},
+					"image_link": {
+						"title": "Image Link",
+						"type": "string"
+					},
+					"gym_available": {
+						"title": "Gym Available",
+						"type": "boolean",
+						"default": false
+					},
+					"food_available": {
+						"title": "Food Available",
+						"type": "boolean",
+						"default": false
+					},
+					"allows_booking": {
+						"title": "Allows Booking",
+						"type": "boolean",
+						"default": false
+					}
+				}
+			},
+			"Payment": {
+				"title": "Payment",
+				"required": ["id", "booking_id", "payment_date", "payment_status", "email"],
+				"type": "object",
+				"properties": {
+					"id": {
+						"title": "Id",
+						"type": "string"
+					},
+					"booking_id": {
+						"title": "Booking Id",
+						"type": "string"
+					},
+					"payment_date": {
+						"title": "Payment Date",
+						"type": "string"
+					},
+					"payment_status": {
+						"title": "Payment Status",
+						"type": "string"
+					},
+					"total_price": {
+						"title": "Total Price",
+						"type": "number",
+						"default": 0.0
+					},
+					"amount": {
+						"title": "Amount",
+						"type": "number",
+						"default": 0.0
+					},
+					"email": {
+						"title": "Email",
+						"type": "string"
+					},
+					"notes": {
+						"title": "Notes",
+						"type": "string",
+						"default": ""
+					}
+				}
+			},
+			"Review": {
+				"title": "Review",
+				"required": ["id", "booking_id"],
+				"type": "object",
+				"properties": {
+					"id": {
+						"title": "Id",
+						"type": "string"
+					},
+					"booking_id": {
+						"title": "Booking Id",
+						"type": "string"
+					},
+					"comment": {
+						"title": "Comment",
+						"type": "string",
+						"default": ""
+					},
+					"rating": {
+						"title": "Rating",
+						"type": "number",
+						"default": 0.0
+					}
+				}
+			},
+			"Room": {
+				"title": "Room",
+				"required": ["id", "hotel_id", "room_type", "room_number", "price"],
+				"type": "object",
+				"properties": {
+					"id": {
+						"title": "Id",
+						"type": "string"
+					},
+					"hotel_id": {
+						"title": "Hotel Id",
+						"type": "string"
+					},
+					"room_type": {
+						"title": "Room Type",
+						"type": "string"
+					},
+					"room_number": {
+						"title": "Room Number",
+						"type": "integer"
+					},
+					"price": {
+						"title": "Price",
+						"type": "number"
+					},
+					"rating": {
+						"title": "Rating",
+						"type": "number",
+						"default": 0.0
+					},
+					"image_link": {
+						"title": "Image Link",
+						"type": "string",
+						"default": ""
+					}
+				}
+			},
+			"Staff": {
+				"title": "Staff",
+				"required": ["id", "name", "mobile", "hotel_id"],
+				"type": "object",
+				"properties": {
+					"id": {
+						"title": "Id",
+						"type": "string"
+					},
+					"name": {
+						"title": "Name",
+						"type": "string"
+					},
+					"mobile": {
+						"title": "Mobile",
+						"type": "string"
+					},
+					"mobile_verified": {
+						"title": "Mobile Verified",
+						"type": "boolean",
+						"default": false
+					},
+					"hotel_id": {
+						"title": "Hotel Id",
+						"type": "string"
+					},
+					"rating": {
+						"title": "Rating",
+						"type": "number",
+						"default": 0.0
+					}
+				}
+			},
+			"User": {
+				"title": "User",
+				"required": ["id", "user_name", "email", "password_hash"],
+				"type": "object",
+				"properties": {
+					"id": {
+						"title": "Id",
+						"type": "string"
+					},
+					"user_name": {
+						"title": "User Name",
+						"type": "string"
+					},
+					"email": {
+						"title": "Email",
+						"type": "string"
+					},
+					"email_verified": {
+						"title": "Email Verified",
+						"type": "boolean",
+						"default": false
+					},
+					"password_hash": {
+						"title": "Password Hash",
+						"type": "string"
+					}
+				}
+			},
+			"ValidationError": {
+				"title": "ValidationError",
+				"required": ["loc", "msg", "type"],
+				"type": "object",
+				"properties": {
+					"loc": {
+						"title": "Location",
+						"type": "array",
+						"items": {
+							"anyOf": [{
+								"type": "string"
+							}, {
+								"type": "integer"
+							}]
+						}
+					},
+					"msg": {
+						"title": "Message",
+						"type": "string"
+					},
+					"type": {
+						"title": "Error Type",
+						"type": "string"
+					}
+				}
+			}
+		}
+	}
+}
